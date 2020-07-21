@@ -1,0 +1,324 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: black;
+  font-size: 1.2rem; /*tamaño de las letras*/
+  line-height: 1.6em; /* interlineado */
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.3em;
+}
+.h1ser{
+    padding: 5rem;
+    font-size: 3rem;
+  line-height: 1.3em;
+}
+.h1i{
+    text-align: center;
+    font-size: 2.5em;
+
+}
+
+.h1c{
+  margin-top: 9rem;
+  font-size: 2rem;
+  color: black;
+}
+/* parrafos */
+p {
+  margin-bottom: 1.6em; /*margen inferior funciona como enter entre parrafos*/
+  text-align: justify;
+}
+
+    .container {
+      width: 85%;
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+.header {
+  background: #333;
+  color: white;
+  padding: 0rem 0;
+
+  /* hacer el menu fijo */
+  position: fixed;
+  left: 0;
+  top: 0;
+  /* ocuapamos todo el ancho */
+  right: 0;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  /* lo alineamos al centro */
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+/* logo */
+.logo {
+  letter-spacing: 15px;
+  font-size: 1.3em;
+}
+.img{
+  height: 70px; width: 70px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* todos los "ul" que esten dentro de "navigation" */
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation ul li {
+  /* uno al lado del otro */
+  display: inline-block;
+}
+
+/* los enlaces dentro del menu */
+.navigation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s linear;
+  border-radius: 5px;
+}
+
+.navigation ul li a:hover {
+  background: #cc4444;
+}
+
+.main {
+  padding-top: 8rem;
+}
+
+/*imagen de salsa*/
+
+h2{
+    font-size: 1.3rem;
+  line-height: 1.3em;
+  color: black;
+  text-align: center;
+}
+.container-fluid{
+  padding: 4rem 0;
+}
+.imgs {
+  float: left;
+  height: 170px; width: 170px;
+}
+/*----------------------------------------------------------------------------------------------------*/
+/* REPONSIVE */
+/* todas las caracteristicas que se mostraran a continuancion seran cuando tenga un ancho maximo de 767px */
+
+@media only screen and (max-width: 767px) {
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+    .navigation{
+        width: 100%;
+    }
+    .navigation ul{
+        display: none;
+    }
+    .navigation ul.show{
+        display: block;
+    }
+      
+    .navigation ul li {
+        display: block;
+      }
+      
+      /* los enlaces dentro del menu */
+      .navigation ul li a {
+        display: block;
+        padding: 0.5rem 1rem;
+        transition: all 0.2s linear;
+        border-radius: 5px;
+      }
+      
+      .navigation ul li a:hover {
+        background: #cc4444;
+      }
+}
+/*---------------------------------------------------------------CONTACTANOS----------------------------------------------------------------------------*/
+.ulc {
+    list-style: none;
+    padding: 0 0em;
+    color: white;
+}
+.logoc {
+    padding: 5rem;
+    text-align: center;
+    font-size: 3em;
+}
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+.contact-form {
+    background: #246355;
+    color: white;
+}
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+}
+.contact-form form label {
+    display: block;
+}
+.contact-form form p {
+    margin: 0;
+    padding: 0em;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+    padding: 0rem;
+}
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: white;
+    border-bottom: 1px solid #fff;
+}
+.contact-form form button {
+    background: #ddd;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #d63031;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+/* CONTACT INFO */
+.contact-info {
+    background: #ddd;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+    color: black;
+}
+/* LARGE SIZE */
+@media(min-width: 700px) {
+/*    body {
+        padding: 0 4em;
+    }*/
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+        color: black;
+    }
+}
+
+/*---------------------------------------------------tabla servivios--------------------------------*/
+.tabla{
+  margin: 0px auto;
+  width: 600px;
+      border-collapse: collapse;
+  
+}
+table{
+  background-color: white;
+  text-align: left;
+  border-collapse: collapse;
+  width: 200%;
+}
+th, td{
+ padding: 5px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid black;
+    border-left: 0px;
+    color: black;
+}
+thead{
+  background-color: #246355;
+  border-bottom: solid 5px #0F362D;
+  color: white;
+}
+tr:nth-child(even){
+  background-color: #ddd;
+}
+tr:hover{
+  background-color: #369681;
+  color: black ;
+}
+/*-
+/* CONTACT INFO */
+.contact-info1 {
+    background: #ddd;
+}
+
+/* LARGE SIZE */
+@media(min-width: 700px) {
+/*    body {
+        padding: 0 4em;
+    }*/
+    .contact-wrapper2 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper2 > * {
+        padding: 2em;
+}
+.imgt{
+    height: 400px; width: 400px;
+}
+/*------------------------------------------------------------------pie de pagina-------------------------------------------------------------------------*/
+.footer {
+  background: #246355;
+  padding: 0rem 0;
+  text-align: center;
+  margin-top: 6rem;
+}
+.Tom{
+text-align: center;
+color: white;
+}
+
+.menu-link{
+    color: black;
+}
+
+.fb{
+    color: white;
+}
+.ai{
+  color: white;
+}
